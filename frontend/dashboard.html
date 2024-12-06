@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Avaliações</title>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard de Avaliações</h1>
+    </header>
+    
+    <main>
+        <!-- Seção de Resumo com Médias -->
+        <div id="resumo">
+            <div class="card">
+                <h3>Limpeza</h3>
+                <p id="mediaLimpeza">Carregando...</p>
+            </div>
+            <div class="card">
+                <h3>Recepção</h3>
+                <p id="mediaRecepcao">Carregando...</p>
+            </div>
+            <div class="card">
+                <h3>Agilidade</h3>
+                <p id="mediaAgilidade">Carregando...</p>
+            </div>
+            <div class="card">
+                <h3>Serviços Médicos</h3>
+                <p id="mediaServicos">Carregando...</p>
+            </div>
+        </div>
+        
+
+        <!-- Exibir Avaliações Detalhadas -->
+        <div id="avaliacoesContainer">
+            <h3>Avaliações Detalhadas</h3>
+        </div>
+
+        <!-- Gráfico de Avaliações -->
+        <div id="grafico-container">
+            <canvas id="graficoAvaliacao" width="400" height="200"></canvas>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../scripts/dashboard.js"></script>
+</body>
+</html>

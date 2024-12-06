@@ -1,0 +1,114 @@
+/* Reset e Estilo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Área Principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Seção de Resumo */
+#resumo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Gráfico */
+#grafico-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Estilo para o contêiner das avaliações detalhadas */
+#avaliacoesContainer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para cada avaliação individual */
+.avaliacao {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.avaliacao h4 {
+    font-size: 1.2em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.avaliacao p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.avaliacao strong {
+    color: #007bff;
+}
+
+.avaliacao p + p {
+    margin-top: 10px;
+}
+
+.avaliacao:last-child {
+    margin-bottom: 0;
+}

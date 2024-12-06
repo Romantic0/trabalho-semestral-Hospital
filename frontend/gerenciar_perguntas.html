@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Perguntas - Avaliação Hospital</title>
+    <link rel="stylesheet" href="../styles/gerenciar_perguntas.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciar Perguntas</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a> <!-- Link para a tela de Dashboard -->
+            <a href="login.html">Sair</a>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Adicionar Nova Pergunta</h2>
+            <form id="questionForm">
+                <div class="form-group">
+                    <label for="questionText">Texto da Pergunta</label>
+                    <textarea id="questionText" required></textarea>
+                </div>
+                <button type="submit">Adicionar Pergunta</button>
+            </form>
+        </section>
+        <section class="list-section">
+            <h2>Perguntas Cadastradas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Pergunta</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="questionsList">
+                    <!-- Perguntas carregadas dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="../scripts/gerenciar_perguntas.js"></script>
+</body>
+</html>
